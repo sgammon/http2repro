@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: http2pushrepro
+netty:
+  default:
+    allocator:
+      max-order: 3
+micronaut:
+  server:
+    ssl:
+      port: 8443
+      enabled: true
+      build-self-signed: true
+    http-version: 2.0
+    netty:
+      http2:
+        push-enabled: true
